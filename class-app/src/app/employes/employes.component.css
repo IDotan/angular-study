@@ -1,3 +1,8 @@
+#comp_section {
+    width: 95%;
+    margin: auto;
+}
+
 h2 {
     color: #1f1fec;
 }
@@ -26,7 +31,7 @@ h2 {
 .selected_employ {
     position: relative;
     width: max-content;
-    min-width: 35ch;
+    min-width: 30ch;
 }
 
 .selected_employ>label {

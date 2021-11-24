@@ -1,0 +1,19 @@
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#copyright {
+    padding-right: 1em;
+}
+
+#footer>div {
+    display: inline-block;
+}
+
+#footer_social_btns>span {
+    cursor: pointer;
+    padding-right: 0.4em;
+}
