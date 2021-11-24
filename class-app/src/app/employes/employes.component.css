@@ -1,0 +1,39 @@
+h2 {
+    color: #1f1fec;
+}
+
+#employes_table {
+    border-collapse: collapse;
+}
+
+#employes_table tr:nth-of-type(1) {
+    border-bottom: 0.1em solid #000;
+}
+
+#employes_table tr td:not(:nth-of-type(1)) {
+    padding: 0.25em 1em;
+    text-align: center;
+}
+
+#employes_table tr:nth-of-type(2n+1):not(:nth-of-type(1)) {
+    background-color: #919191;
+}
+
+#employes_table .selected {
+    background-color: #6a9fe3 !important;
+}
+
+.selected_employ {
+    position: relative;
+    width: max-content;
+    min-width: 35ch;
+}
+
+.selected_employ>label {
+    line-height: 3ch;
+}
+
+.selected_employ>input {
+    position: absolute;
+    right: 0;
+}

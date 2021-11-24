@@ -1,0 +1,37 @@
+<h2>Employes</h2>
+<table id="employes_table">
+    <tr>
+        <th></th>
+        <th>ID</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>Birthday</th>
+        <th>Salary</th>
+        <th>E-mail</th>
+    </tr>
+    <tr *ngFor="let employe of employes" [class.selected]="employe === selected_employee" (click)="onSelect(employe)">
+        <td><input type="checkbox" name="multi_select"></td>
+        <td>{{employe.id}}</td>
+        <td>{{employe.fname}}</td>
+        <td>{{employe.lname}}</td>
+        <td>{{employe.dob}}</td>
+        <td>{{employe.salary}}</td>
+        <td>{{employe.email}}</td>
+    </tr>
+</table>
+
+
+<div>
+    <h3>Update data</h3>
+    <div class="selected_employ" *ngIf="selected_employee">
+        <p>selected employ ID: {{selected_employee.id}}</p>
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" [(ngModel)]="selected_employee.fname">
+        <br>
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" [(ngModel)]="selected_employee.lname">
+        <br>
+        <label for="lname">E-mail: </label>
+        <input type="text" id="email" [(ngModel)]="selected_employee.email">
+    </div>
+</div>
