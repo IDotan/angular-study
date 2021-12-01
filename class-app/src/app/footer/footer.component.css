@@ -15,7 +15,12 @@
     height: max-content;
 }
 
-#footer_social_btns>span {
+#footer_social_btns>a {
     cursor: pointer;
     padding-right: 0.4em;
+}
+
+#footer_social_btns>a:visited,
+#footer_social_btns>a:link {
+    color: inherit;
 }

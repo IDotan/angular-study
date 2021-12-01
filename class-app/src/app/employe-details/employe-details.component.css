@@ -1,14 +1,29 @@
 .selected_employ {
-    padding: 1em 2em;
+    width: max-content;
+    padding: 1.5em;
     background-color: #dbd2b3;
     border: #000 dashed 0.2em;
     border-radius: 10%;
+    text-align: center;
+}
+
+.selected_employ h3 {
+    margin-top: 0;
+}
+
+.selected_employ p {
+    margin: 0;
 }
 
 #update_fileds>fieldset {
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: none;
+}
+
+#update_fileds>fieldset:not(:nth-last-of-type(1)) {
+    margin-bottom: 0.5em;
 }

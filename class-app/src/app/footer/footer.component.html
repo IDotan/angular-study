@@ -1,7 +1,7 @@
 <section id="footer">
     <div id="copyright"> &copy; Itai Dotan </div>
     <div id="footer_social_btns">
-        <span *ngFor="let btn of SOCIALS" title="{{btn.name}}" (click)="click_link(btn)"
-            innerHTML="{{btn.icon}}"></span>
+        <a *ngFor="let btn of SOCIALS" href="{{btn.URL}}" target="_blank" title="{{btn.name}}"
+            innerHTML="{{btn.icon}}"></a>
     </div>
 </section>
