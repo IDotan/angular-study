@@ -1,0 +1,20 @@
+<div>
+    <div class="selected_employ" *ngIf="employee">
+        <h3>Update {{employee.fname | uppercase}} {{employee.lname | uppercase}}</h3>
+        <p>selected employ ID: {{employee.id}}</p>
+        <div id="update_fileds">
+            <fieldset>
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" [(ngModel)]="employee.fname">
+            </fieldset>
+            <fieldset>
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" [(ngModel)]="employee.lname">
+            </fieldset>
+            <fieldset>
+                <label for="lname">E-mail: </label>
+                <input type="text" id="email" [(ngModel)]="employee.email">
+            </fieldset>
+        </div>
+    </div>
+</div>

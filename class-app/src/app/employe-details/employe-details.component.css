@@ -1,0 +1,14 @@
+.selected_employ {
+    padding: 1em 2em;
+    background-color: #dbd2b3;
+    border: #000 dashed 0.2em;
+    border-radius: 10%;
+}
+
+#update_fileds>fieldset {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}

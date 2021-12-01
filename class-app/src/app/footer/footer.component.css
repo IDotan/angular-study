@@ -2,15 +2,17 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    text-align: center;
-}
-
-#copyright {
-    padding-right: 1em;
+    height: 2em;
+    background-color: #4b83bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border-top: #000 solid 0.2em;
 }
 
 #footer>div {
-    display: inline-block;
+    height: max-content;
 }
 
 #footer_social_btns>span {
