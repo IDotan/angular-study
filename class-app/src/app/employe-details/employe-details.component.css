@@ -13,6 +13,7 @@
 
 .selected_employ p {
     margin: 0;
+    margin-bottom: 0.2em;
 }
 
 #update_fileds>fieldset {
