@@ -1,22 +1,30 @@
-<div class="selected_employ" *ngIf="mail">
+<div class="open_form" *ngIf="mail">
     <h3>Sending E-mail to: {{mail}}</h3>
     <div class="update_fileds">
         <fieldset>
             <label for="to">to:</label>
-            <input type="text" id="to" value="{{mail}}" disabled>
+            <div class="input_incloser">
+                <input type="text" id="to" value="{{mail}}" disabled>
+            </div>
         </fieldset>
         <fieldset>
             <label for="cc">Cc:</label>
-            <input type="text" id="cc">
+            <div class="input_incloser">
+                <input type="text" id="cc">
+            </div>
         </fieldset>
         <fieldset>
             <label for="lname">Subject:</label>
-            <input type="text" id="Subject">
+            <div class="input_incloser">
+                <input type="text" id="Subject">
+            </div>
         </fieldset>
         <fieldset>
             <label for="message">My message:</label>
-            <input type="text" id="message">
+            <div class="input_incloser">
+                <input type="textarea" id="message">
+            </div>
         </fieldset>
     </div>
-    <button (click)="sendMail(mail)">Send</button>
+    <button id="send_btn" (click)="sendMail(mail)">Send</button>
 </div>

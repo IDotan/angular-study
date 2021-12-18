@@ -1,20 +1,26 @@
-<div>
-    <div class="selected_employ" *ngIf="employee">
+<div id="first_form">
+    <div class="open_form" *ngIf="employee">
         <h3>{{employee.fname | uppercase}} {{employee.lname | uppercase}}</h3>
         <p>selected employ ID: {{employee.id}}</p>
         <div class="update_fileds">
             <fieldset>
                 <label for="fname">First name: </label>
-                <input type="text" id="fname" [(ngModel)]="employee.fname">
+                <div class="input_incloser">
+                    <input type="text" id="fname" [(ngModel)]="employee.fname">
+                </div>
             </fieldset>
             <fieldset>
                 <label for="lname">Last name: </label>
-                <input type="text" id="lname" [(ngModel)]="employee.lname">
+                <div class="input_incloser">
+                    <input type="text" id="lname" [(ngModel)]="employee.lname">
+                </div>
             </fieldset>
             <fieldset>
                 <label for="lname">E-mail: </label>
-                <input type="text" id="email" [(ngModel)]="employee.email">
-                <button (click)="emailForm(employee.email)">Send maile</button>
+                <div class="input_incloser">
+                    <input type="text" id="email" [(ngModel)]="employee.email">
+                    <button (click)="emailForm(employee.email)">Send mail</button>
+                </div>
             </fieldset>
         </div>
     </div>

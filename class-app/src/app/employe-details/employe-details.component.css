@@ -1,4 +1,8 @@
-.selected_employ {
+#first_form {
+    padding-bottom: 1em;
+}
+
+.open_form {
     width: max-content;
     padding: 1.5em;
     background-color: #dbd2b3;
@@ -7,11 +11,11 @@
     text-align: center;
 }
 
-.selected_employ h3 {
+.open_form h3 {
     margin-top: 0;
 }
 
-.selected_employ p {
+.open_form p {
     margin: 0;
     margin-bottom: 0.2em;
 }
@@ -27,4 +31,18 @@
 
 .update_fileds>fieldset:not(:nth-last-of-type(1)) {
     margin-bottom: 0.5em;
+}
+
+.input_incloser {
+    width: 20ch;
+    display: flex;
+    padding-left: 1em;
+}
+
+.input_incloser>input {
+    width: 100%;
+}
+
+.input_incloser>button {
+    flex-shrink: 0;
 }

@@ -17,6 +17,7 @@ h2 {
 }
 
 #employes_table {
+    height: max-content;
     border-collapse: collapse;
 }
 
