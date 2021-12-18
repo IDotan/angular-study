@@ -1,0 +1,27 @@
+#mssg_com_continer {
+    max-width: 95%;
+    margin: auto;
+}
+
+h2 {
+    color: var(--h2-clr);
+    margin-bottom: 0;
+}
+
+#msg_com_display {
+    max-width: 80%;
+    margin: auto;
+}
+
+#msg_com_display>button {
+    margin-bottom: 1em;
+}
+
+#msg_com_msg_window {
+    max-height: 10vmax;
+    overflow: auto;
+}
+
+#msg_com_msg_window span {
+    font-style: italic;
+}

@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { EmployesComponent } from './employes/employes.component';
 import { FooterComponent } from './footer/footer.component';
 import { EmployeDetailsComponent } from './employe-details/employe-details.component';
+import { MessagesComponentComponent } from './messages/messages-component/messages-component.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SendmailComponent } from './sendmail/sendmail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployesComponent,
     FooterComponent,
-    EmployeDetailsComponent
+    EmployeDetailsComponent,
+    MessagesComponentComponent,
+    SendmailComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

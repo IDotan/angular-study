@@ -2,7 +2,7 @@
     <div class="selected_employ" *ngIf="employee">
         <h3>{{employee.fname | uppercase}} {{employee.lname | uppercase}}</h3>
         <p>selected employ ID: {{employee.id}}</p>
-        <div id="update_fileds">
+        <div class="update_fileds">
             <fieldset>
                 <label for="fname">First name: </label>
                 <input type="text" id="fname" [(ngModel)]="employee.fname">
@@ -14,7 +14,9 @@
             <fieldset>
                 <label for="lname">E-mail: </label>
                 <input type="text" id="email" [(ngModel)]="employee.email">
+                <button (click)="emailForm(employee.email)">Send maile</button>
             </fieldset>
         </div>
     </div>
 </div>
+<app-sendmail id="mail_form" [mail]="formToMail"></app-sendmail>

@@ -16,7 +16,7 @@
     margin-bottom: 0.2em;
 }
 
-#update_fileds>fieldset {
+.update_fileds>fieldset {
     margin: 0;
     padding: 0;
     display: flex;
@@ -25,6 +25,6 @@
     border: none;
 }
 
-#update_fileds>fieldset:not(:nth-last-of-type(1)) {
+.update_fileds>fieldset:not(:nth-last-of-type(1)) {
     margin-bottom: 0.5em;
 }

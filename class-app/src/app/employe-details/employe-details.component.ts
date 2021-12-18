@@ -8,9 +8,17 @@ import { Employes } from '../employes/employes';
 })
 export class EmployeDetailsComponent implements OnInit {
 
+  formToMail: string = "";
+
+  closeEmailForm(): void {
+    this.formToMail = "";
+  }
+
+  emailForm(mail: string): void {
+    this.formToMail = mail
+  }
   constructor() { }
 
-  ngOnInit(): void {
-  }
-  @Input() employee?: Employes
+  ngOnInit(): void { }
+  @Input() employee?: Employes;
 }

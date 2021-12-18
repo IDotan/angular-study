@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Employes } from './employes';
-import { EMPLOYES } from '../list_employes';
+import { EmployeeService } from '../services/employee-service';
+import { MessageService } from '../services/message-service';
+import { EmployeDetailsComponent } from '../employe-details/employe-details.component';
 
 @Component({
   selector: 'app-employes',
@@ -9,14 +11,21 @@ import { EMPLOYES } from '../list_employes';
 })
 export class EmployesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private employeeService: EmployeeService, private messageService: MessageService) { }
 
-  ngOnInit(): void {
+  getEmployees(): void {
+    this.employeeService.getEmployees().subscribe(employees => this.employes = employees);;
   }
 
-  employes = EMPLOYES;
+  ngOnInit(): void {
+    this.getEmployees()
+  }
+
+  employes: Employes[] = [];
   selected_employee?: Employes;
+
   onSelect(employe: Employes): void {
     this.selected_employee = employe;
+    this.messageService.add('Employ component: Selected employ ID #' + employe.id);
   }
 }

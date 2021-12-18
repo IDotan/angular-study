@@ -1,0 +1,22 @@
+<div class="selected_employ" *ngIf="mail">
+    <h3>Sending E-mail to: {{mail}}</h3>
+    <div class="update_fileds">
+        <fieldset>
+            <label for="to">to:</label>
+            <input type="text" id="to" value="{{mail}}" disabled>
+        </fieldset>
+        <fieldset>
+            <label for="cc">Cc:</label>
+            <input type="text" id="cc">
+        </fieldset>
+        <fieldset>
+            <label for="lname">Subject:</label>
+            <input type="text" id="Subject">
+        </fieldset>
+        <fieldset>
+            <label for="message">My message:</label>
+            <input type="text" id="message">
+        </fieldset>
+    </div>
+    <button (click)="sendMail(mail)">Send</button>
+</div>

@@ -1,0 +1,9 @@
+<div id="mssg_com_continer" *ngIf="messageService.messages.length">
+    <h2>Messages</h2>
+    <div id="msg_com_display">
+        <button class="clear" (click)="messageService.clear()">Clear messages</button>
+        <div id="msg_com_msg_window">
+            <div *ngFor='let message of messageService.messages'><span>{{message[0]}}</span> : {{message[1]}}</div>
+        </div>
+    </div>
+</div>
